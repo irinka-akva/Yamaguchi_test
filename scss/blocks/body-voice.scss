@@ -1,0 +1,15 @@
+.body-voice {
+    background-color: $background-color-voice;
+    color: $font-color-voice;
+    font-family: $ff-montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px;
+
+    @media (min-width: $vp-second-point) {
+        background-image: url("../img/dots.svg");
+        font-size: 22px;
+        line-height: 37.4px;
+    }
+}

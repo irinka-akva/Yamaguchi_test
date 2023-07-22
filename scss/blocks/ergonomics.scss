@@ -1,11 +1,11 @@
 .ergonomics {
     padding-top: 15px;
 
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
         padding-top: 26px;
     }
 
-    @media (min-width: $vp-1920) {
+    @media (min-width: $vp-max-width) {
         display: grid;
         grid-template-columns: 64.48% 33.07%;
         column-gap: 2.45%;
@@ -22,14 +22,14 @@
     font-weight: 700;
     line-height: 38px;
 
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
         font-family: $ff-ubuntu;
         font-size: 62px;
         font-weight: 300;
         line-height: 62px;
     }
 
-    @media (min-width: $vp-1920) {
+    @media (min-width: $vp-max-width) {
         margin-bottom: 40px;
     }
 }
@@ -40,13 +40,13 @@
     flex-direction: column;
     text-align: center;
 
-    @media (min-width: $vp-1920) {
+    @media (min-width: $vp-max-width) {
         grid-row: 1/3;
     }
 }
 
 .ergonomics__text {
-    @media (min-width: $vp-1920) {
+    @media (min-width: $vp-max-width) {
         margin-bottom: 0;
     }
 }
@@ -55,12 +55,12 @@
 .ergonomics__img-bottom {
     object-fit: cover;
 
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
        width: 600px;
        height: 500px;
     }
 
-    @media (min-width: $vp-1200) {
+    @media (min-width: $vp-third-point) {
         object-fit:none;
        width: 975px;
        height: 782px;
@@ -92,7 +92,7 @@
     transition: transform 1s ease;
     transform: translateY(-35px);
 
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
         transform: translateY(-50px);
     }
 }

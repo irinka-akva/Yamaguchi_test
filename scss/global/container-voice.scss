@@ -1,14 +1,14 @@
 .container-voice {
-    min-width: $vp-320;
+    min-width: $vp-min-width;
     padding: 0 15px;
   
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
       padding: 0 50px;
     }
   
-    @media (min-width: $vp-1920) {
-      margin: 0 auto;
-      padding: 0 100px;
-      max-width: $vp-1920;
-    }
+    // @media (min-width: $vp-max-width) {
+    //   margin: 0 auto;
+    //   padding: 0 0 0 58px;
+    //   max-width: $vp-max-width;
+    // }
   }

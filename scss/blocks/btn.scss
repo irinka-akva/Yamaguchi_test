@@ -27,7 +27,7 @@
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
     }
 
-    @media (min-width: $vp-800) {
+    @media (min-width: $vp-second-point) {
         width: 100px;
         height: 100px;
         font-size: 24px;
@@ -35,7 +35,7 @@
         margin: 17px;
     }
 
-    @media (min-width: $vp-1200) {
+    @media (min-width: $vp-third-point) {
         width: 200px;
         height: 200px;
         font-size: 40.194px;

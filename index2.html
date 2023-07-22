@@ -15,34 +15,47 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <div class="container">
-        <main class="main-voice">
-            <section class="voice">
-                <h1 class="voice__header">Yamaguchi Voice Control</h1>
-                <p class="voice__text">Вы&nbsp;можете управлять программами массажа или самим креслом с&nbsp;помощью
-                    голосовых команд,
-                    приведённых
-                    ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на&nbsp;левом
-                    подлокотнике,
-                    для
-                    запуска сеанса голосового управления.</p>
-                <p class="voice__text"> Произнесите одну из&nbsp;доступных команд. Если произнесённая команда
-                    распознана, вы&nbsp;услышите ответ и&nbsp;кресло приступит к&nbsp;выполнению запроса.</p>
-                <div class="voice__img-wrapper">
+<body class="body-voice">
+    <main>
+        <section class="voice">
+            <div class="voice-wrapper">
+                <div class="voice__text-wrapper">
+                    <h1 class="voice__header">Yamaguchi <br>Voice Control</h1>
+                    <p class="voice__text">Вы&nbsp;можете управлять программами массажа или самим креслом с&nbsp;помощью
+                        голосовых команд,
+                        приведённых
+                        ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на&nbsp;левом
+                        подлокотнике,
+                        для
+                        запуска сеанса голосового управления.</p>
+                    <p class="voice__text"> Произнесите одну из&nbsp;доступных команд. Если произнесённая команда
+                        распознана, вы&nbsp;услышите ответ и&nbsp;кресло приступит к&nbsp;выполнению запроса.</p>
                 </div>
                 <div class="voice__img-wrapper">
-                    <img src="./img/phone-mobile.png" alt="Экран смартфона с примером голосовых команд" width="411"
-                        height="424">
                 </div>
-                <div class="voice__command-text-wrapper">
-                    <span class="voice__command-text voice__command-text--first">Скажи:</span>
-                    <span class="voice__command-text voice__command-text--second">"ОКЕЙ,</span>
-                    <span class="voice__command-text voice__command-text--third">ЯМАГУЧИ"</span>
+                <div class="voice__img-phone-wrapper">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 800px)"
+                            srcset="./img/phone-desktop.webp 1x, ./img/phone-desktop-2x.webp 2x">
+                        <source type="image/webp" srcset="./img/phone-mobile.webp 1x, ./img/phone-mobile-2x.webp 2x">
+                        <source media="(min-width: 800px)"
+                            srcset="./img/phone-desktop.png, ./img/phone-desktop-2x.png 2x">
+                        <img class="voice__img-phone" src="./img/phone-mobile.png" srcset="./img/phone-mobile-2x.png"
+                            alt="Экран смартфона с примером голосовых команд" width="411" height="424">
+                    </picture>
+
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+            <div class="voice__command-text-wrapper">
+                <span class="voice__command-text voice__command-text--first"></span>
+                <div class="voice__command-text-container">
+                    <span class="voice__command-text voice__command-text--second"></span>
+                    <span class="voice__command-text voice__command-text--third"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
 </body>
 

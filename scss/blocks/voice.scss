@@ -1,0 +1,186 @@
+.voice {
+    @media (min-width: $vp-third-point) {
+        margin: 0 auto;
+        padding: 50px 10px 0 58px;
+        max-width: $vp-max-width;
+    }
+}
+
+.voice-wrapper {
+    @media (min-width: $vp-third-point) {
+        display: flex;
+    }
+}
+
+.voice__text-wrapper {
+    min-width: $vp-min-width;
+    padding: 0 15px;
+
+    @media (min-width: $vp-third-point) {
+        width: 34.98%;
+        padding: 0;
+    }
+}
+
+.voice__header {
+    font-size: 34px;
+    line-height: 34px;
+
+    @media (min-width: $vp-second-point) {
+        font-size: 56px;
+        line-height: 80.4px;
+        font-weight: 400;
+    }
+}
+
+.voice__img-wrapper {
+    min-height: 760px;
+    position: relative;
+
+    @media (min-width: $vp-third-point) {
+        width: 23.71%;
+    }
+
+    &::before {
+        @include pseudo();
+        width: 289px;
+        height: 756px;
+        background-image: url("../img/girl.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 2;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/girl-2x.png");
+            background-size: cover;
+            width: 289px;
+            height: 756px;
+        }
+    }
+
+    &::after {
+        @include pseudo();
+        width: 194px;
+        height: 61px;
+        border-radius: 50%;
+        background-color: black;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.voice__img-phone-wrapper {
+    min-height: 425px;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (min-width: $vp-third-point) {
+        width: 41.31%;
+    }
+}
+
+.voice__img-phone {
+    @media (width: $vp-min-width) {
+        position: absolute;
+        top: 0;
+        right: -22%;
+    }
+
+    @media (min-width: 325px) {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    @media (min-width: $vp-third-point) {
+        width: 742px;
+        height: 767px;
+        left: -70px;
+        right: auto;
+    }
+
+    @media (min-width: $vp-max-width) {
+        width: 842px;
+        height: 867px;
+        top: -40px;
+        left: -70px;
+    }
+}
+
+.voice__command-text {
+    display: inline-block;
+
+    &--first {
+        background-image: url("../img/say.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 181.77px;
+        height: 42.499px;
+
+        @media (min-width: $vp-second-point) {
+            width: 210px;
+            height: 49px;
+        }
+    }
+
+    &--second {
+        background-image: url("../img/ok.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 249.085px;
+        height: 56.894px;
+
+        @media (min-width: $vp-second-point) {
+            width: 249px;
+            height: 64px;
+        }
+    }
+
+    &--third {
+        background-image: url("../img/yamaguchi.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 303.719px;
+        height: 53.913px;
+
+        @media (min-width: $vp-second-point) {
+            width: 374px;
+            height: 56px;
+        }
+    }
+}
+
+.voice__text {
+    @media (min-width: $vp-max-width) {
+        padding-right: 77px;
+    }
+}
+
+.voice__command-text-container {
+    @media (min-width: $vp-max-width) {
+        padding-left: 40px;
+    }
+}
+
+.voice__command-text-wrapper {
+    min-width: $vp-min-width;
+    padding: 0 15px;
+
+    @media (min-width: $vp-third-point) {
+        padding: 0;
+    }
+
+    @media (min-width: $vp-max-width) {
+        margin-top: -70px;
+    }
+}
