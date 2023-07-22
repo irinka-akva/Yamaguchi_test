@@ -1,14 +1,14 @@
-
 // Global
 
+@import "global/variables";
+@import "global/mixins";
+@import "global/reboot";
 @import "global/fonts";
-// @import "global/reboot";
-// @import "global/utils";
-// @import "global/container";
+@import "global/container";
+@import "global/container-voice";
 
 // Blocks
 
+@import "blocks/body-ergonomics";
 @import "blocks/ergonomics";
-// @import "blocks/application-form";
-// @import "blocks/btn";
-// @import "blocks/catalog";
+@import "blocks/btn";

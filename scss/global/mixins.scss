@@ -1,27 +1,7 @@
-// @mixin pseudo ($display: block,
-//   $pos: absolute,
-//   $content: "") {
-//   content: $content;
-//   display: $display;
-//   position: $pos;
-// }
-
-// // Desktop first
-
-// @mixin vp-1259 {
-//   @media (max-width: ($vp-1260 - 1px)) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1023 {
-//   @media (max-width: ($vp-1024 - 1px)) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-767 {
-//   @media (max-width: ($vp-768 - 1px)) {
-//     @content;
-//   }
-// }
+@mixin pseudo ($display: block,
+  $pos: absolute,
+  $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}

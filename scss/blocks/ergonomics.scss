@@ -1,8 +1,103 @@
 .ergonomics {
-color: #181818;
-font-family: "Ubuntu", "Arial", sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 27.2px;
+    padding-top: 15px;
+
+    @media (min-width: $vp-800) {
+        padding-top: 26px;
+    }
+
+    @media (min-width: $vp-1920) {
+        display: grid;
+        grid-template-columns: 64.48% 33.07%;
+        column-gap: 2.45%;
+    }
+}
+
+.ergonomics__header {
+    margin: 0;
+    padding-right: 20px;
+    color: $header-color-ergonomics;
+    font-family: $ff-bebas;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+
+    @media (min-width: $vp-800) {
+        font-family: $ff-ubuntu;
+        font-size: 62px;
+        font-weight: 300;
+        line-height: 62px;
+    }
+
+    @media (min-width: $vp-1920) {
+        margin-bottom: 40px;
+    }
+}
+
+.ergonomics__img-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: $vp-1920) {
+        grid-row: 1/3;
+    }
+}
+
+.ergonomics__text {
+    @media (min-width: $vp-1920) {
+        margin-bottom: 0;
+    }
+}
+
+.ergonomics__img-top,
+.ergonomics__img-bottom {
+    object-fit: cover;
+
+    @media (min-width: $vp-800) {
+       width: 600px;
+       height: 500px;
+    }
+
+    @media (min-width: $vp-1200) {
+        object-fit:none;
+       width: 975px;
+       height: 782px;
+    }
+}
+
+.ergonomics__img-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.ergonomics__btn-wrapper {
+    position: absolute;
+    top: 52.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+// For JavaScript
+
+.ergonomics__img-top.up-js {
+    transition: transform 1s ease;
+    transform: translateY(-35px);
+
+    @media (min-width: $vp-800) {
+        transform: translateY(-50px);
+    }
+}
+
+.ergonomics__img-top.down-js {
+    transition: transform 1s ease;
+    transform: translateY(0);
 }

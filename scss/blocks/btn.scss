@@ -1,0 +1,45 @@
+.btn {
+    margin: 11px;
+    border-radius: 50%;
+    border: none;
+    background-color: $button-color;
+    width: 61px;
+    height: 61px;
+    color: $button-font-color;
+    font-family: $ff-ubuntu;
+    font-size: 12.275px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20.868px;
+    transition: 0.5s ease;
+
+    &:hover {
+        background-color: darken($button-color, 25%);
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus {
+        background-color: darken($button-color, 20%);
+    }
+
+    &:active {
+        background-color: darken($button-color, 35%);
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (min-width: $vp-800) {
+        width: 100px;
+        height: 100px;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 17px;
+    }
+
+    @media (min-width: $vp-1200) {
+        width: 200px;
+        height: 200px;
+        font-size: 40.194px;
+        line-height: 68.33px;
+        margin: 37px;
+    }
+}

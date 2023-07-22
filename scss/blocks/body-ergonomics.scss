@@ -1,0 +1,14 @@
+.body-ergonomics {
+    background-color: $background-color-ergonomics;
+    color: $font-color-ergonomics;
+    font-family: $ff-ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27.2px;
+
+    @media (min-width: $vp-800) {
+        font-size: 22px;
+        line-height: 37.4px;
+    }
+}
