@@ -56,14 +56,14 @@
     object-fit: cover;
 
     @media (min-width: $vp-second-point) {
-       width: 600px;
-       height: 500px;
+        width: 600px;
+        height: 500px;
     }
 
     @media (min-width: $vp-third-point) {
-        object-fit:none;
-       width: 975px;
-       height: 782px;
+        object-fit: none;
+        width: 975px;
+        height: 782px;
     }
 }
 

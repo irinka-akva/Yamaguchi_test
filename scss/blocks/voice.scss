@@ -14,7 +14,7 @@
 
 .voice__text-wrapper {
     min-width: $vp-min-width;
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
 
     @media (min-width: $vp-third-point) {
         width: 34.98%;
@@ -33,9 +33,66 @@
     }
 }
 
+// Animation
+
+@keyframes change-hole-width {
+    0% {
+        width: 5px;
+        height: 2px;
+    }
+
+    25%,
+    75% {
+        width: 320px;
+        height: 15px;
+    }
+
+    100% {
+        width: 194px;
+        height: 50px;
+    }
+}
+
+@keyframes girl-rotate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes girl-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes girl-show {
+    0% {
+        transform: translateY(756px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+//
+
 .voice__img-wrapper {
-    min-height: 760px;
+    min-height: 800px;
     position: relative;
+    overflow: hidden;
 
     @media (min-width: $vp-third-point) {
         width: 23.71%;
@@ -45,14 +102,16 @@
         @include pseudo();
         width: 289px;
         height: 756px;
+
         background-image: url("../img/girl.png");
         background-repeat: no-repeat;
         background-position: center;
-        top: -10px;
+        top: 12px;
         right: 0;
         left: 0;
         margin: auto;
-        z-index: 2;
+        z-index: 3;
+        animation: 4s girl-opacity both 1s, 2s girl-show both 1s, 2.5s girl-rotate ease-out infinite 3s;
 
         @media (min-resolution: 2dppx) {
             background-image: url("../img/girl-2x.png");
@@ -65,20 +124,21 @@
     &::after {
         @include pseudo();
         width: 194px;
-        height: 61px;
+        height: 50px;
         border-radius: 50%;
         background-color: black;
         bottom: 0;
         right: 0;
         left: 0;
         margin: auto;
+        animation: 4s change-hole-width;
+        z-index: 2;
     }
 }
 
 .voice__img-phone-wrapper {
     min-height: 425px;
     position: relative;
-    margin-bottom: 30px;
 
     @media (min-width: $vp-third-point) {
         width: 41.31%;
@@ -90,6 +150,7 @@
         position: absolute;
         top: 0;
         right: -22%;
+        z-index: 5;
     }
 
     @media (min-width: 325px) {
@@ -100,9 +161,10 @@
     }
 
     @media (min-width: $vp-third-point) {
-        width: 742px;
-        height: 767px;
+        width: 542px;
+        height: 567px;
         left: -70px;
+        top: 80px;
         right: auto;
     }
 
@@ -175,12 +237,10 @@
 .voice__command-text-wrapper {
     min-width: $vp-min-width;
     padding: 0 15px;
-
-    @media (min-width: $vp-third-point) {
-        padding: 0;
-    }
+    position: relative;
 
     @media (min-width: $vp-max-width) {
         margin-top: -70px;
+        width: 40%;
     }
 }
